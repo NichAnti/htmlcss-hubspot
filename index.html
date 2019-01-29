@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <!-- HEAD -->
   <head>
     <meta charset="utf-8">
     <title>HubSpot</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   </head>
+  <!-- BODY -->
   <body>
+    <!-- PRIMA NAV -->
     <nav background="deep-blue">
+      <!-- PARTE SX -->
       <div class="left">
         <span>Contacts</span><i class="fas fa-caret-down"></i>
         <span>Conversation</span><i class="fas fa-caret-down"></i>
@@ -17,25 +21,25 @@
         <span>Automation</span><i class="fas fa-caret-down"></i>
         <span>Reports</span><i class="fas fa-caret-down"></i>
       </div>
+      <!-- PARTE DX -->
       <div class="right">
         <i class="fas fa-search"></i>
         <span>Boolean</span>
       </div>
     </nav>
-    <nav id="sticky-bar">
+    <!-- SECONDA NAV -->
+    <nav background="quiet-white" id="sticky-bar">
       <div class="container">
         <div class="raw">
+          <!-- PARTE SX -->
           <div class="left">
-            <div class="inline-block">
               <i class="fas fa-globe-americas"></i>
               <span>English</span>
               <i class="fas fa-caret-down"></i>
-            </div>
-            <div class="inline-block">
-              <span id="sales">Sales: +353 1 512 4400</span>
+              <span class="left-border">Sales: +353 1 512 4400</span>
               <i class="fas fa-caret-down"></i>
-            </div>
           </div>
+          <!-- PARTE DX -->
           <div class="right">
             <i class="fas fa-search"></i>
             <button type="button" name="button">Log in</button>
@@ -44,12 +48,15 @@
         </div>
       </div>
     </nav>
+    <!-- TERZA NAV -->
     <nav>
       <div class="container">
         <div class="raw">
+          <!-- PARTE SX -->
           <div class="left">
             <img src="https://www.hubspot.com/hubfs/HubSpot_Logos/HSLogo_color.svg" alt="HubSpot Logo">
           </div>
+          <!-- PARTE DX -->
           <div class="right">
             <span><strong>Software</strong></span><i class="fas fa-caret-down"></i>
             <span><strong>Pricing</strong></span>
@@ -60,8 +67,10 @@
         </div>
       </div>
     </nav>
+    <!-- PRIMA SECTION -->
     <section background="blue">
       <div class="container">
+        <!-- DIV.ITEM-2 OCCUPA 2/3 DEL CONTAINER (POSIZIONE DEFAULT SX) -->
         <div class="item2">
           <h1 class="big">There’s a better way to grow.</h1>
           <p>Marketing, sales, and service software that helps your business grow without compromise. Because “good for the business” should also mean “good for the customer.”</p>
@@ -70,20 +79,25 @@
         </div>
       </div>
     </section>
+    <!-- SECONDA SECTION -->
     <section background="quiet-white">
       <div class="container">
+        <!-- DIV.TEXT-CENTER OCCUPA IL CENTRO DEL CONTAINER -->
         <div class="text-center">
           <img class="height260" src="https://www.hubspot.com/hubfs/assets/hubspot.com/home/2018/Integrations_Illustration@2x.png" alt="HubSpot Growth Stack">
           <h1>Powerful alone. Better together.</h1>
           <p>HubSpot offers a full stack of software for marketing, sales, and customer service, with a completely free CRM at its core. They’re powerful alone — but even better when used together.</p>
           <br>
         </div>
+        DIV.RAW.BOX E' UN BOX (SFONDO BIANCO E MARGINI) CHE OCCUPA IL CONTAINER
         <div class="raw box">
+            <!-- OCCUPA 1/3 DEL BOX A SX -->
             <div class="left text-center item3">
               <img class="height150" src="https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/CRM-Illustration.svg" alt="CRM Illustration">
               <br><br>
               <button type="button" name="button">Learn More</button>
             </div>
+            <!-- OCCUPA 2/3 DEL BOX A DX -->
             <div class="left double-item3">
               <h3>Free HubSpot CRM</h3>
               <p>Everything you need to organize, track, and build better relationships with leads and customers. Yes, it's 100% free. Forever.</p>
@@ -93,7 +107,9 @@
               <i class="fas fa-check-circle"></i><span>Tasks</span>
             </div>
         </div>
+        <!-- RIGA PER TRE BOX AFFIANCATI -->
         <div class="raw">
+          <!-- PRIMO BOX -->
           <div class="left item3 text-center box">
               <img class="height150" src="https://www.hubspot.com/hubfs/Marketing-Hub-Free.svg" alt="Marketing Illustration">
               <h3>Marketing Hub</h3>
@@ -105,6 +121,7 @@
               <span>Analytics</span><br>
               <button type="button" name="button">Learn More</button>
             </div>
+            <!-- SECONDO BOX -->
           <div class="left item3 text-center box">
               <img class="height150" src="https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/Sales-Professional-Illustration.svg" alt="Sales Illustration">
               <h3>Sales Hub</h3>
@@ -116,6 +133,7 @@
               <span>Email Automation</span><br>
               <button type="button" name="button">Learn More</button>
             </div>
+            <!-- TERZO BOX -->
           <div class="left item3 text-center box">
               <img class="height150" src="https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/Service-Hub-Illustration.svg" alt="Service Illustration">
               <h3>Service Hub</h3>
@@ -130,33 +148,41 @@
         </div>
       </div>
     </section>
+    <!-- TERZA SECTION -->
     <section background="blue">
       <div class="container">
+        <!-- DIV CENTRATO CHE OCCUPA 2/3 DEL CONTAINER -->
         <div class="text-center single double-item3">
           <h1>Learn and grow with award-winning support and a thriving community behind you.</h1>
           <p>You don't have to go it alone. Master the inbound methodology and get the most out of your tools with HubSpot's legendary customer support team and a community of thousands of marketing and sales pros just like you.</p>
         </div>
         <br>
+        <!-- TABELLA -->
         <div>
+          <!-- PRIMA RIGA -->
           <div class="raw bottom-border">
+            <!-- PRIMA CELLA -->
             <div class="left text-center item4 cell right-border">
               <div class="centre">
                 <h1>50+</h1>
                 <span>HubSpot user groups</span>
               </div>
             </div>
+            <!-- SECONDA CELLA -->
             <div class="left text-center item4 cell right-border">
               <div class="centre">
                 <h1>4.5M+</h1>
                 <span>monthly visits</span>
               </div>
             </div>
+            <!-- TERZA CELLA -->
             <div class="left text-center item4 cell right-border">
               <div class="centre">
                 <h1>155K+</h1>
                 <span>certrified professionals</span>
               </div>
             </div>
+            <!-- QUARTA CELLA -->
             <div class="left text-center item4 cell">
               <div class="centre">
                 <h1>21K+</h1>
@@ -164,25 +190,30 @@
               </div>
             </div>
           </div>
+          <!-- SECONDA RIGA -->
           <div class="raw">
+            <!-- PRIMA CELLA -->
             <div class="left text-center item4 cell right-border">
               <div class="centre">
                 <h1>200+</h1>
                 <span>integrations</span>
               </div>
             </div>
+            <!-- SECONDA CELLA -->
             <div class="left text-center item4 cell right-border">
               <div class="centre">
                 <h1>6</h1>
                 <span>languages</span>
               </div>
             </div>
+            <!-- TERZA CELLA -->
             <div class="left text-center item4 cell right-border">
               <div class="centre">
                 <h1>2.6M+</h1>
                 <span>social followers</span>
               </div>
             </div>
+            <!-- QUARTA CELLA -->
             <div class="left text-center item4 cell">
               <div class="centre">
                 <h1>5K+</h1>
@@ -193,38 +224,52 @@
         </div>
       </div>
     </section>
+    <!-- QUARTA SECTION -->
     <section>
       <div class="container">
+        <!-- RIGA -->
         <div class="raw">
+          <!-- OCCUPA 1/3 DELLA RIGA A SX -->
           <div class="left item3 box">
             <h1>52,000</h1>
             <p>customers in over 100 countries growing their businesses with HubSpot</p>
           </div>
+          <!-- OCCUPA 2/3 DELLA RIGA A DX -->
           <div class="left double-item3">
+            <!-- PRIMA RIGA LOGHI  -->
             <div class="raw">
+              <!-- LOGO 1 -->
               <div class="left text-center item4 box">
                 <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/shopify.png" alt="shopify.png" class="logos">
               </div>
+              <!-- LOGO 2 -->
               <div class="left text-center item4 box">
                 <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/usabilia.png" alt="usabilia.png" class="logos">
               </div>
+              <!-- LOGO 3 -->
               <div class="left text-center item4 box">
                 <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/tufts.png" alt="tufts.png" class="logos">
               </div>
+              <!-- LOGO 4 -->
               <div class="left text-center item4 box">
                 <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/iadvize.png" alt="iadvize.png" class="logos">
               </div>
             </div>
+            <!-- SECONDA RIGA LOGHI -->
             <div class="raw">
+              <!-- LOGO 1 -->
               <div class="left text-center item4 box">
                 <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/mention.png" alt="mention.png" class="logos">
               </div>
+              <!-- LOGO 2 -->
               <div class="left text-center item4 box">
                 <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/care.png" alt="homepage_customers_care.png" class="logos">
               </div>
+              <!-- LOGO 3 -->
               <div class="left text-center item4 box">
                 <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/scrive.png" alt="scrive.png" class="logos">
               </div>
+              <!-- LOGO 4 -->
               <div class="left text-center item4 box">
                 <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/Randstad-logo_main_99ACC2.png" alt="" class="logos">
               </div>
@@ -232,13 +277,16 @@
           </div>
         </div>
         <br><br>
+        <!-- RIGA CON FOTO -->
         <div class="raw">
+          <!-- DIV CHE OCCUPA 1/2 DEL CONTAINER A SX-->
           <div class="left item2">
               <h2>Start Growing With HubSpot Today</h2>
               <p>With tools to make every part of your process more human and a support team excited to help you, getting started with inbound has never been easier.</p>
               <button type="button" name="button">Get HubSpot for free</button>
               <p>Get started with FREE tools, or get more with our premium software.</p>
           </div>
+          <!-- DIV CHE OCCUPA 1/2 DEL CONTAINER A DX-->
           <div class="left item2">
             <div class="right profile">
             </div>
@@ -246,9 +294,12 @@
         </div>
       </div>
     </section>
+    <!-- FOOTER -->
     <footer background="deep-blue">
       <div class="container">
+        <!-- RIGA CON 4 COLONNE DI SPAN -->
         <div class="raw">
+          <!-- PRIMA COLONNA -->
           <div class="left item4">
             <span>Increase Your Traffic</span><br>
             <span>Ad Software</span> <br>
@@ -257,6 +308,7 @@
             <span>Social Media Software</span><br>
             <span>Content Management System</span><br>
           </div>
+          <!-- SECONDA COLONNA -->
           <div class="left item4">
             <span>Connect With Leads</span><br>
             <span>Find New Prospects</span><br>
@@ -265,6 +317,7 @@
             <span>Click to Call Your Leads</span><br>
             <span>Email Scheduling</span><br>
           </div>
+          <!-- TERZA COLONNA -->
           <div class="left item4">
             <span>Close and Manage Leads</span><br>
             <span>Document Tracking Tool</span><br>
@@ -273,6 +326,7 @@
             <span>Lead Management Tool</span><br>
             <span>Pipeline Management Tool</span><br>
           </div>
+          <!-- QUARTA COLONNA -->
           <div class="left item4">
             <span>Support and Tools</span><br>
             <span>HubSpot Partners</span><br>
@@ -284,7 +338,9 @@
             immaginine
           </div>
         </div>
-        <div class="height150 relative">
+        <!-- RIGA LINGUE -->
+        <div class="height150 raw">
+          <!-- LINGUE CENTRATE -->
           <div class="centre">
             <span>Engish</span>
             <span>Espanol</span>
@@ -295,11 +351,14 @@
         </div>
         <hr>
         <br>
+        <!-- ULTIMA RIGA COPYRIGHT E VARI -->
         <div class="raw">
+          <!-- PARTE SX -->
           <div class="left">
             <img src="https://www.hubspot.com/hubfs/HubSpot_Logos/HSLogo_gray.svg" alt="HubSpot Logo">
             <p class="mini">Copyright 2019 HubSpot, inc.</p>
           </div>
+          <!-- PARTE DX -->
           <div class="right">
             <span>Legal Staff</span>
             <span>Privacy Policy</span>

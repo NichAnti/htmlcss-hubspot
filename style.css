@@ -1,3 +1,4 @@
+/* azzeramento margini e border + font-family */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,46 +6,17 @@
   font-family: sans-serif;
 }
 
-nav {
-  height: 75px;
-  line-height: 75px;
-  color: rgb(51, 71, 91)
-}
-
-#sticky-bar {
-  position: sticky;
-  background-color: #f5f8fa;
-  top: 0;
-}
-
-i, span {
-  padding: 0 7px;
-}
-
-section, footer {
-  padding: 64px 0;
-}
-
-#sales {
-  padding-left: 15px;
-  border-left: 2px solid rgba(51, 71, 91, 0.2);
-}
-
-[background="quiet-white"] {
-  background-color: #f5f8fa;
-}
-
+/* POSIZIONAMENTO di elementi rispetto ad altri*/
+/* riga che occupa il 100% della larghezza per contenere elementi float e absolute*/
 .raw {
   width: 100%;
   content: "";
   display: table;
   clear: both;
+  position: relative;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
+/* float left/right */
 .left {
   float: left;
 }
@@ -53,96 +25,52 @@ section, footer {
   float: right;
 }
 
-.container {
-  width: 1100px;
-  margin: auto;
-}
-
-[background="blue"] {
-  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
-  color: white;
-}
-
-.big {
-  font-size: 50px;
-}
-
-.mini {
-  font-size: 10px;
-}
-
-.height260 {
-  height: 260px;
-}
-
-.height150 {
-  height: 150px;
-}
-
-footer span {
-  display: inline-block;
-}
-
-h1, h2, h3, h4, h5, p, button, i, footer span {
-  margin: 15px 0;
-}
-
-.item3 {
-  width: 33.3333%;
-}
-
-.item3.box {
-    width: 29.3333%;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.double-item3 {
-  width: 66.6666%;
-}
-
-.item4 {
-  width: 25%;
-}
-
-.item2 {
-  width: 50%;
-}
-
-.container > .box {
-  width: 96%;
-}
-
-.box {
-  background-color: white;
-  padding: 15px;
-  margin: 2%;
-}
-
-.item4.box {
-  width: 21%;
-}
-
-.single {
-  margin: auto;
-}
-
-.cell {
-  height: 200px;
-  position: relative;
-}
-
-.cell span {
-  font-size: 14px;
-}
-
+/* accentramento verticale e orizzontale */
 .centre {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* accentramento orizzontale per solo testo */
+.text-center {
+  text-align: center;
+}
+
+/* ALTRI POSIZIONAMENTI */
+/* per non far occupare al contenuto l'intera larghezza */
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+/* accentramento orizzontale di un blocco singolo in una riga */
+.single {
+  margin: auto;
+}
+
+/* barra sticky */
+#sticky-bar {
+  position: sticky;
+}
+
+
+
+/* PADDING, BORDER, MARGIN (per testo o iconcine)*/
+/* margine verticale */
+h1, h2, h3, h4, h5, p, button, i, footer span {
+  margin: 15px 0;
+}
+
+/* padding orizzontale */
+i, span {
+  padding: 0 7px;
+}
+
+/* border left/right/bottom (left per trattino verticale, right e bottom per creare la tabella) */
+.left-border {
+  border-left: 2px solid rgba(51, 71, 91, 0.2);
 }
 
 .right-border {
@@ -153,10 +81,94 @@ h1, h2, h3, h4, h5, p, button, i, footer span {
   border-bottom: 1px solid;
 }
 
+/* PADDING, BORDER, MARGIN (per distanziare sezioni ecc.)*/
+/* padding verticale delle section e del footer */
+section, footer {
+  padding: 64px 0;
+}
+
+.box {
+  background-color: white;
+  padding: 15px;
+  margin: 2%;
+}
+
+/* LARGHEZZE BLOCCHI */
+/* senza box */
+.item4 {
+  width: 25%;
+}
+
+.item3 {
+  width: 33.3333%;
+}
+
+.item2 {
+  width: 50%;
+}
+
+.double-item3 {
+  width: 66.6666%;
+}
+
+/* con box */
+.item4.box {
+  width: 21%;
+}
+
+.item3.box {
+  width: 29.3333%;
+}
+
+.container > .box {
+  width: 96%;
+}
+
+/* MODIFICHE PER ELEMENTI VARI */
+/* altezza barre di navigazione e colore caratteri*/
+nav {
+  height: 75px;
+  line-height: 75px;
+  color: rgb(51, 71, 91)
+}
+
+/* colori sfondo e colore caratteri*/
+[background="deep-blue"] {
+  background-color: #33475b;
+  color: white;
+}
+
+[background="quiet-white"] {
+  background-color: #f5f8fa;
+}
+
+[background="blue"] {
+  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+  color: white;
+}
+
+/* dimensione (con padding), colore sfondo e testo bottoni */
+button {
+  padding: 10px;
+  color: white;
+  background-color: #ff7a59;
+}
+
+/* elementi (soprattutto immagini) con altezza 260/150px */
+.height260 {
+  height: 260px;
+}
+
+.height150 {
+  height: 150px;
+}
+
+/* larghezza loghi nella griglietta */
 .logos {
   width: 95px;
 }
 
+/* dimensionamento foto persona */
 .profile {
   width: 375px;
   height: 300px;
@@ -165,17 +177,26 @@ h1, h2, h3, h4, h5, p, button, i, footer span {
   background-image: url("https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/CTA_Card_profile_3@2x.png");
 }
 
-[background="deep-blue"] {
-  background-color: #33475b;
-  color: white;
-}
-
-.relative {
+/* altezza celle tabella con file da 4 elementi e dimensione testo span*/
+.cell {
+  height: 200px;
   position: relative;
 }
 
-button {
-  padding: 10px;
-  color: white;
-  background-color: #ff7a59;
+.cell span {
+  font-size: 14px;
+}
+
+/* rende gli span del footer inline-block per poter applicare margini */
+footer span {
+  display: inline-block;
+}
+
+/* MODIFICHE AL FONT */
+.big {
+  font-size: 50px;
+}
+
+.mini {
+  font-size: 10px;
 }
