@@ -1,7 +1,37 @@
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  border: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  height: 75px;
+  line-height: 75px;
+  color: rgb(51, 71, 91)
+}
+
+#sticky-bar {
+  position: sticky;
+  background-color: #f5f8fa;
+  top: 0;
+}
+
+i, span {
+  padding: 0 7px;
+}
+
+section, footer {
+  padding: 64px 0;
+}
+
+#sales {
+  padding-left: 15px;
+  border-left: 2px solid rgba(51, 71, 91, 0.2);
+}
+
+[background="quiet-white"] {
+  background-color: #f5f8fa;
 }
 
 .raw {
@@ -9,6 +39,10 @@
   content: "";
   display: table;
   clear: both;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .left {
@@ -20,12 +54,45 @@
 }
 
 .container {
-  width: 1000px;
+  width: 1100px;
   margin: auto;
+}
+
+[background="blue"] {
+  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+  color: white;
+}
+
+.big {
+  font-size: 50px;
+}
+
+.mini {
+  font-size: 10px;
+}
+
+.height260 {
+  height: 260px;
+}
+
+.height150 {
+  height: 150px;
+}
+
+footer span {
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, p, button, i, footer span {
+  margin: 15px 0;
 }
 
 .item3 {
   width: 33.3333%;
+}
+
+.item3.box {
+    width: 29.3333%;
 }
 
 .text-center {
@@ -42,4 +109,73 @@
 
 .item2 {
   width: 50%;
+}
+
+.container > .box {
+  width: 96%;
+}
+
+.box {
+  background-color: white;
+  padding: 15px;
+  margin: 2%;
+}
+
+.item4.box {
+  width: 21%;
+}
+
+.single {
+  margin: auto;
+}
+
+.cell {
+  height: 200px;
+  position: relative;
+}
+
+.cell span {
+  font-size: 14px;
+}
+
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right-border {
+  border-right: 1px solid;
+}
+
+.bottom-border {
+  border-bottom: 1px solid;
+}
+
+.logos {
+  width: 95px;
+}
+
+.profile {
+  width: 375px;
+  height: 300px;
+  background-size: cover;
+  background-position: top;
+  background-image: url("https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/CTA_Card_profile_3@2x.png");
+}
+
+[background="deep-blue"] {
+  background-color: #33475b;
+  color: white;
+}
+
+.relative {
+  position: relative;
+}
+
+button {
+  padding: 10px;
+  color: white;
+  background-color: #ff7a59;
 }
